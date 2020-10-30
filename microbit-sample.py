@@ -12,7 +12,7 @@ CIRCLE = Image("09990:90009:90009:90009:09990")
 
 def on_connect(client, userdata, flags, rc):
     if rc == 0:
-        client.subscribe("mousemove")
+        client.subscribe("mousemovement")
         display.show(Image.YES)
 
 def on_message(client, userdata, msg):
